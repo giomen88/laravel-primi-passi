@@ -7,12 +7,11 @@
     <title>Document</title>
 </head>
 <body>
+    <h2>LISTA DELLA SPESA</h2>
     <ul>
-    
         @foreach ($shopping_list as $item)
         <li> {{$item}} </li>
         @endforeach
-    
 </ul>
 </body>
 </html>
