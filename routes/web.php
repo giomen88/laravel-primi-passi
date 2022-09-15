@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $shopping_list = ['pane', 'latte', 'pasta', 'uova', 'biscotti'];
+    return view('home', compact('shopping_list'));
 });
